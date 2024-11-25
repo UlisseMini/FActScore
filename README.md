@@ -1,3 +1,12 @@
+# Fork notes
+
+Modifications to try and get it to work for some [rebuttals](https://github.com/UlisseMini/actadd-rebuttals).
+- Removed version restrictions in pyproject.toml (use latest versions of everything)
+- Replaced `inst-llama-7B` with `llama-8-inst` in all files
+- Downloaded `Meta-Llama-3-8B-Instruct` to `llama-8-inst` directly instead of the legacy weight diff adding procedure people had to do in the dark ages
+
+Does it run yet? No.
+
 # FActScore
 
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-red.svg)](#python)
