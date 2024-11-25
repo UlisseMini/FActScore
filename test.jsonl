@@ -1,0 +1,69 @@
+{
+    "topic": "James Wilson",
+    "output": "James Wilson is a British physicist and professor at Oxford University. He made groundbreaking discoveries in quantum mechanics and won the Nobel Prize in Physics in 2010. Wilson currently leads the Quantum Computing Initiative at Oxford.",
+    "atomic_facts": [
+      {
+        "fact": "James Wilson is British",
+        "label": "Supported"
+      },
+      {
+        "fact": "James Wilson is a physicist",
+        "label": "Supported"
+      },
+      {
+        "fact": "James Wilson is a professor at Oxford University", 
+        "label": "Not-supported"
+      },
+      {
+        "fact": "James Wilson made discoveries in quantum mechanics",
+        "label": "Not-supported"
+      },
+      {
+        "fact": "James Wilson won the Nobel Prize in Physics",
+        "label": "Not-supported"
+      },
+      {
+        "fact": "James Wilson won the Nobel Prize in Physics in 2010",
+        "label": "Not-supported"
+      },
+      {
+        "fact": "James Wilson leads the Quantum Computing Initiative at Oxford",
+        "label": "Not-supported"
+      }
+    ]
+  }
+  
+  {
+    "topic": "Marie Chen",
+    "output": "Marie Chen is an acclaimed Canadian author and journalist based in Vancouver. Her award-winning novels explore themes of immigration and identity. She currently writes for The Globe and Mail.",
+    "atomic_facts": [
+      {
+        "fact": "Marie Chen is Canadian",
+        "label": "Supported"
+      },
+      {
+        "fact": "Marie Chen is an author",
+        "label": "Supported"
+      },
+      {
+        "fact": "Marie Chen is a journalist",
+        "label": "Supported"
+      },
+      {
+        "fact": "Marie Chen is based in Vancouver",
+        "label": "Not-supported"
+      },
+      {
+        "fact": "Marie Chen writes novels",
+        "label": "Supported"
+      },
+      {
+        "fact": "Marie Chen has won awards for her novels",
+        "label": "Not-supported"
+      },
+      {
+        "fact": "Marie Chen writes for The Globe and Mail",
+        "label": "Supported"
+      }
+    ]
+  }

@@ -58,8 +58,8 @@ editing-demos
 data
 
 llama-7B
-inst-llama-7B
-inst-llama-7B.zip
+llama-8-inst
+llama-8-inst.zip
 
 .cache
 fs-venv
