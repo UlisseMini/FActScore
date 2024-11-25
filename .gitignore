@@ -49,13 +49,11 @@ coverage.xml
 # Sphinx documentation
 docs/_build/
 
-demos
 original_generation
 enwiki-20230401.db
 api.key
 editing-data
 editing-demos
-data
 
 llama-7B
 llama-8-inst
@@ -68,3 +66,4 @@ poetry.lock
 
 acl-publication-info.74k.parquet
 .env
+.oaikey

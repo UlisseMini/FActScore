@@ -229,12 +229,15 @@ class FactScorer(object):
                         total_words += len(prompt.split())
                     continue
 
+                # FIXME: Go inside this and replace their custom generation logic with
+                # huggingface. That will fix it. Currently getting [-inf, ... -inf] + wrong size for assert.
                 output = self.lm.generate(prompt)
 
                 if type(output[1])==np.ndarray:
                     # when logits are available
+                    import pdb; pdb.set_trace()
                     logits = np.array(output[1])
-                    assert logits.shape[0] in [32000, 32001]
+                    assert logits.shape[0] in [32000, 32001], f"Logits shape: {logits.shape} last is not in [32000, 32001]"
                     true_score = logits[5852]
                     false_score = logits[7700]
                     is_supported = true_score > false_score

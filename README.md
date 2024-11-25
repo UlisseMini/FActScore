@@ -4,8 +4,27 @@ Modifications to try and get it to work for some [rebuttals](https://github.com/
 - Removed version restrictions in pyproject.toml (use latest versions of everything)
 - Replaced `inst-llama-7B` with `llama-8-inst` in all files
 - Downloaded `Meta-Llama-3-8B-Instruct` to `llama-8-inst` directly instead of the legacy weight diff adding procedure people had to do in the dark ages
+- Figured out how to download the data from Google Drive (their wget hack broke)
 
 Does it run yet? No.
+
+Setup instructions:
+
+```sh
+# fresh env
+pip install --upgrade -e .
+python -m spacy download en_core_web_sm
+
+# TODO: Make this work for others (currently I downloaded the file from the url:
+# https://drive.usercontent.google.com/download?id=1mekls6OGOKLmt7gYtHs0WGf5oTamTNat&export=download&authuser=0
+# then opened "downloads", copied the direct link, cancelled it and wget-ed it on my vps.)
+python -m factscore.download_data
+
+huggingface-cli login # put key with llama access
+mkdir -p .cache/factscore
+huggingface-cli download meta-llama/Meta-Llama-3-8B-Instruct --local-dir .cache/factscore/llama-8-inst
+
+```
 
 # FActScore
 

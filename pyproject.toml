@@ -11,11 +11,13 @@ python = "*"
 torch = "*"
 sentence-transformers = "*"
 transformers = "*"
-openai = "*"
+openai = "0.28"
 rank-bm25 = "*"
 spacy = "*"
 pysqlite-binary = "*"
+sentencepiece = "*"
 nltk = "*"
+protobuf = "*"
 
 [build-system]
 requires = ["poetry-core"]
